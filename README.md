@@ -1,8 +1,32 @@
-# React + Vite
+# Tasks Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Gerenciador de tarefas simples e moderno, desenvolvido com React + Vite.
 
-Currently, two official plugins are available:
+## ✨ Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Adicionar novas tarefas
+- Marcar tarefas como concluídas
+- Excluir tarefas
+- Interface limpa e responsiva
+- Persistência de dados no navegador (localStorage)
+
+## 🛠️ Tecnologias
+
+- **React** (com Vite)
+- **Tailwind CSS**
+- JavaScript
+- LocalStorage (para salvar as tarefas)
+
+## 🚀 Como executar
+
+### Pré-requisitos
+
+- Node.js instalado
+
+### Passo a passo
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/antoniolibreno/Tasks-project.git
+```
