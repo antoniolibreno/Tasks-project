@@ -16,3 +16,4 @@ Gerenciador de tarefas simples e moderno, desenvolvido com React + Vite.
 - **Tailwind CSS**
 - JavaScript
 - LocalStorage (para salvar as tarefas)
+- Implementação de rotas

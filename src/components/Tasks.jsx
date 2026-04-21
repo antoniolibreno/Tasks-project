@@ -1,16 +1,16 @@
-import {
-  ArrowBigRightIcon,
-  ChevronRightCircleIcon,
-  ChevronRightIcon,
-  CircleArrowRightIcon,
-  CircleXIcon,
-  DeleteIcon,
-  EraserIcon,
-  Trash2Icon,
-  TrashIcon,
-} from "lucide-react";
+import { ChevronRightIcon, TrashIcon } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 function Tasks({ tasks, onTaskClick, onDeleteTaskClick }) {
+  function onDetailClick(task) {
+    const queryParams = new URLSearchParams();
+    queryParams.set("title", task.title);
+    queryParams.set("description", task.description);
+    navigate(`/task?${queryParams.toString()}`);
+  }
+
+  const navigate = useNavigate();
+
   return (
     <ul className="space-y-4 p-6 bg-slate-200 rounded-sm shadow">
       {tasks.map((task) => (
@@ -21,7 +21,10 @@ function Tasks({ tasks, onTaskClick, onDeleteTaskClick }) {
           >
             {task.title}
           </button>
-          <button className="bg-slate-400 p-2 rounded-md text-white">
+          <button
+            onClick={() => onDetailClick(task)}
+            className="bg-slate-400 p-2 rounded-md text-white"
+          >
             <ChevronRightIcon />
           </button>
           <button
